@@ -1,10 +1,12 @@
 * {
-  background-color: black;
   font-family: Helvetica;
   font-size: 22px;
   font-weight: bold;
-  opacity: 0.9;
   color: white;
+}
+body {
+    background-color: black;
+    opacity: 0.9;
 }
 /*----------------------*/
 /* Navigation & Header */
@@ -18,6 +20,8 @@
   width: 100%;
   height: 69px;
   border-bottom: 1px solid seashell;
+  background-color: black;
+  opacity: 0.9;
 }
 
 .logo {
@@ -68,6 +72,7 @@
 .box1 .mission {
   Width:100%;
   text-align: center;
+  background-color: black;
 }
 
 .box2 {
@@ -81,23 +86,23 @@
 }
 
 .photo-grid {
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+  height: 600px;
+  width: 1000px;
+}
+
+.photo-grid-item{
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px;
 }
 
 .item {
   text-align: center;
 }
-.photo-grid-item{
-  width: 300px;
-  height: 200px;
-  margin: 10px;
-}
-
-.box3 {
-  display: flex;
-  justify-content: center;
-}
-
 
 h2 {
   font-size: 37px;
@@ -107,10 +112,27 @@ h4 {
   font-size: 25px;
 }
 
-.box4 {
-  height:500px;
+.locations {
+      background-image: url(../images/img-locations-background.jpg);
+      background-repeat: no-repeat;
+      height: 500px;
+      width: 1100px;
+      padding-top: 70px;
+      justify-content: center;
+      margin: auto;
+      text-align: center;
+
 }
 
+.address {
+    display: inline-block;
+    flex-basis: 280px;
+    background-color: black;
+    width: 300px;
+    padding: 10px;
+    margin: 5px 20px;
+    opacity: 1;
+}
 
 
 /*----------------------*/
